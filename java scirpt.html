@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Coba Javascript</title>
+	</head>
+	<body>
+		<script language=Javascript>
+			function cek ()
+			{
+			if (document.frmbuku.nama.value=="")
+			{
+				alert ('nama harus diisi');
+				document.frmbuku.nama.focus();
+				return false;
+			}
+			else
+			{
+			return true;
+			}
+			}
+		</script>
+		<form method="post" action="hasil.html name="frmbuku" onSubmit="return cek()">
+		<table>
+			<tr>
+				<td>Nama<td>:</td></td><td><input type="text" name="nama"></td>
+			</tr>
+			<tr>
+				<td>Email<td>:</td></td><td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+		<td>Komentar</td><td>:</td><td><textarea name='komentar'></textarea></td>
+			</tr>
+			<tr><td colspan="2"><input type="submit" name="kirimm" value="Kirim"></td></tr>
+		</table>
+	</body>
+</html>
